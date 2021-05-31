@@ -4,7 +4,7 @@ FROM tomcat:9
 
 # Обновление системы, установка jdk, maven,tomcat 9, git
 
-RUN apt-get update && apt-get install default -jdk -y && apt-get install maven -y && apt-get install git -y
+RUN apt-get update && apt-get install default-jdk -y && apt-get install maven -y && apt-get install git -y
 
 # Клонирование образа boxfuse-sample-java-war-hello
 
