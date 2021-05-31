@@ -12,7 +12,7 @@ RUN cd / && git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.g
 
 # Процесс сборки
 
-RUN cd /boxfuse-sample-java-war-hello/ && mvn package
+RUN cd /boxfuse-sample-java-war-hello/ && mvn package && cd /target/
 
 # Копирование для дальнейшего запуска
 
