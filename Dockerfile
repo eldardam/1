@@ -12,11 +12,11 @@ RUN cd / && git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.g
 
 # Процесс сборки
 
-RUN cd /boxfuse-sample-java-war-hello/ && mvn package && cd /target/hello-1.0
+RUN cd /boxfuse-sample-java-war-hello/ && mvn package && cd /boxfuse-sample-java-war-hello/target/
 
 # Копирование для дальнейшего запуска
 
-RUN cp hello-1.0.war /var/lib/tomcat9/webapps/
+RUN cp hello-1.0.war /usr/local/tomcat
 
 # Проброс порта 8080
 
