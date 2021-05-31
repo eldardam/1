@@ -1,6 +1,6 @@
 # Установка базового образа ubuntu 16:04
 
-FROM tomcat 9
+FROM tomcat:9
 
 # Обновление системы, установка jdk, maven,tomcat 9, git
 
